@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporary Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temporary Database</h1>
+        <div>
+            <h2>Create Table</h2>
+            <form id="create-table-form">
+                <label for="table-name">Table Name:</label>
+                <input type="text" id="table-name" required>
+                <label for="fields">Fields (comma separated):</label>
+                <input type="text" id="fields" required>
+                <button type="submit">Create Table</button>
+            </form>
+        </div>
+        <div id="tables-container">
+            <!-- Tables will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="edit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="edit-form">
+                <!-- Dynamic form fields will be appended here -->
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
